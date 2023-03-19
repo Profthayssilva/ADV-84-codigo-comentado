@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	background-image: url("mars.gif");
+    background-position: center;
+    background-size: cover;
+}
+#myCanvas
+{
+    margin-top: 30px;
+	border-width:10px;
+	background-color: white; 
+	border-style:ridge;
+}
+
+h1,h4
+{
+	color: white !important;
+}
+</style>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Movendo o Rover sobre Marte</title>
+</head>
+
+<!-- 1. Carregue o canvas, o rover e a imagem de fundo: Primeiro, adicionaremos um evento onload
+com uma função para a tag body. Fazermos isso pois queremos que, quando a página for
+carregada, o canvas, o rover e a imagem de fundo sejam carregadas. -->
+<body onload="add();">
+
+<center>
+
+<h1>Movendo o Rover sobre Marte</h1>
+
+<!-- 2. Adicione o canvas: Agora, adicione o canvas, após a tag h4, a qual contém a heading. -->
+<!-- ● Mantenha a id como: myCanvas. Utilizaremos-a para ajustar a referência ao canvas no
+código JavaScript.
+● Mantenha width e height as mesmas do código acima para que o canvas fique grande o
+bastante para trabalharmos e não exceda a tela. -->
+	<canvas id="myCanvas" width="800" height="600">
+	</canvas>
+<h4>
+	
+	<!-- 3. Adicione uma class bootstrap: Agora, adicione uma class bootstrap text-danger à tag b, que
+está dentro da tag h4 -->
+<!-- ● Portanto, a class text-danger, adicionará a cor red ao texto ‘nota’: -->
+	<b class="text-danger">NOTA : </b> SE O ROVER NÃO ESTIVER VISÍVEL, PRESSIONE QUALQUER TECLA DIRECIONAL
+</h4>
+
+</center>
+<script src="main.js">
+</script>
+</body>
+</html>
